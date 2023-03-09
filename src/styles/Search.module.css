@@ -6,11 +6,25 @@
 
 .searchBar input {
   width: 600px;
-  border-radius: 10px;
+  border-radius: 50px;
   height: 2.5rem;
   border: none;
   padding-left: 15px;
 }
 .searchBar input::placeholder {
   color: rgb(202, 202, 202);
+}
+
+.searchButton {
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  border: none;
+}
+.searchButton:hover {
+  background-color: rgb(81, 81, 81);
+}
+.searchIcon {
+  font-size: 26px;
 }

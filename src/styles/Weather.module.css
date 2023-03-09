@@ -4,3 +4,21 @@
   height: 700px;
   border-radius: 15px;
 }
+
+.locationInfo {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.errorMessage {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: xx-large;
+}
+
+.container {
+  margin: auto;
+  justify-content: center;
+}
