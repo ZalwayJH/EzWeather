@@ -9,6 +9,13 @@ export default function Weather() {
   const [weatherData, setWeatherData] = useState("");
   const [cache, setCache] = useState({});
 
+  // const resetCache = () => {
+  //   setCache({});
+  // };
+  // setTimeout(resetCache, 30000);
+
+  console.log(weatherData);
+
   useEffect(() => {
     if (cache[city]) {
       setWeatherData(cache[city]);

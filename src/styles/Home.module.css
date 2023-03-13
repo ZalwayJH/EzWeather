@@ -4,8 +4,11 @@
   justify-content: center;
   align-items: center;
   padding: 6rem;
-  min-height: 100vh;
-  background-color: rgb(205, 205, 205);
+  height: 100vh;
+  background-image: url("../images/Rain.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .description {
