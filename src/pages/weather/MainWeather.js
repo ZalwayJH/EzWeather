@@ -1,5 +1,6 @@
 import styles from "@/styles/Weather.module.css";
 import WeatherCard from "./WeatherCard";
+import WeatherIcon from "./WeatherIcon";
 import Image from "next/image";
 
 export default function MainWeather({ weatherData }) {
@@ -13,7 +14,7 @@ export default function MainWeather({ weatherData }) {
   const windSpeed = weatherData.wind.speed;
   const weatherInfoArr = [`${temp}`, feelsLike, humidity, windSpeed];
   const date = new Date().toDateString();
-  const icon = weatherData.weather[0].icon;
+  const iconCode = weatherData.weather[0].icon;
 
   return (
     <section>
@@ -24,13 +25,7 @@ export default function MainWeather({ weatherData }) {
       </div>
       <h3 className={styles.mainWeatherTitle}>{weatherMain}</h3>
       <h3 className={styles.mainWeatherDesc}>{weatherDesc}</h3>
-      <Image
-        className={styles.weatherIcon}
-        src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
-        alt="Weather Icon"
-        width={250}
-        height={250}
-      />
+      <WeatherIcon iconCode={iconCode} />
       <WeatherCard info={weatherInfoArr} />
     </section>
   );
