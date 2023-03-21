@@ -35,9 +35,9 @@ export default function Weather() {
 
   return (
     <div className={styles.weatherContainer}>
-      <Search setCity={setCity} setRefresh={setRefresh} />
+      <Search setCity={setCity} />
       {weatherData.cod === 200 ? (
-        <MainWeather weatherData={weatherData} />
+        <MainWeather weatherData={weatherData} setRefresh={setRefresh} />
       ) : (
         <div className={styles.error}>
           <h3>Oops! Cannot find a city by that name </h3>

@@ -1,11 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import styles from "@/styles/Weather.module.css";
-// import Icon from "../../images/MyWeatherIcons/brokenClouds.png";
 
 const WeatherIcon = ({ iconCode }) => {
-  let width;
-  let height;
   const codeLibrary = {
     "01d": "clearSky",
     "02d": "fewClouds",
@@ -33,6 +30,7 @@ const WeatherIcon = ({ iconCode }) => {
         className={styles.weatherIcon}
         src={`/MyWeatherIcons/${codeLibrary[iconCode]}.png`}
         alt="Weather Icon"
+        priority={true}
         width={450}
         height={440}
       />

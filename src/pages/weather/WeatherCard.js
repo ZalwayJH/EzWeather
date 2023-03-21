@@ -3,11 +3,12 @@ import { FaTemperatureLow } from "react-icons/fa";
 import { MdOutlineFaceRetouchingOff } from "react-icons/md";
 import { WiHumidity } from "react-icons/wi";
 import { TbWind } from "react-icons/tb";
+import { CiTempHigh } from "react-icons/ci";
 
 export default function WeatherCard({ info }) {
   const cardNames = ["Temperature", "Feels like", "Humidity", "Wind speed"];
   const icons = [
-    <FaTemperatureLow className={styles.icons} />,
+    <CiTempHigh className={styles.icons} />,
     <MdOutlineFaceRetouchingOff className={styles.icons} />,
     <WiHumidity className={styles.icons} />,
     <TbWind className={styles.icons} />,
@@ -17,16 +18,16 @@ export default function WeatherCard({ info }) {
     <div className={styles.cardContainer}>
       {info.map((item, i) => {
         if (cardNames[i] === "Temperature") {
-          item = item + degC;
+          item += degC;
         }
         if (cardNames[i] === "Feels like") {
-          item = item + degC;
+          item += degC;
         }
         if (cardNames[i] === "Humidity") {
-          item = item + "%";
+          item += "%";
         }
         if (cardNames[i] === "Wind speed") {
-          item = item + "mph";
+          item += "mph";
         }
 
         return (
