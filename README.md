@@ -1,38 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# weather-app
 
-## Getting Started
+weather-app is a very simple current weather by city website using Nextjs and the OpenWeatherMap API. I set out on this project in an attempt to see whether i could create completely original, easy to understand 3D weather images using Blender and then integrate them into the website. Created using npx create-next-app@latest.
 
-First, run the development server:
+:eye_speech_bubble: Here is a link to the site:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+[weather-app](https://www.youtube.com/watch?v=FPEjf9Da7dk)
+
+## You can find OpenWeatherMap.org here
+
+[OpenWeatherMap.org](https://openweathermap.org/api)
+
+## About
+
+I set out on this project in hopes of learning more about Nextjs and to deepen my knowledge of Blender. I also wished to combine both of those skill sets to create something very simple, accessible and easy to quickly find out the current weather status of any city in the world.
+The app is divided into 4 main parts, the search bar, the location information and refresh button, the 3D weather image and the weather information cards.
+The user can use the search bar to type in the name of any city, once they press press enter or click the search icon the name of the city is sent to the OpenWeatherMap API and it returns all of the currently available information about the weather at that location right now. This information includes the temperature, the "feels like" temperature, humidity and the wind speed, as well as a code for the weather their own built in weather icons. I use that code to reference which of my own weather icons to use instead.
+
+In the future I would like to improve this by creating animated weather images instead of static ones, however i would most likely require a more powerful computer to improve the the render time of each image.
+
+#### Features
+
+- Simple modern web design
+- Search for locations by city name
+- Refresh button for easy updating
+- Very simple and readable icons and information.
+
+#### Technologies
+
+- [Nextjs](https://nextjs.org/)
+- [Blender](https://www.blender.org/)
+- [React](https://react.dev/)
+
+### Installation
+
+Firstly, make sure you have Node.js installed.
+
+Clone this repository on your local machine
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+git clone https://github.com/ZalwayJH/Colour-Palette.git
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Navigate into the repository
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+cd weather-app
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Install dependencies
 
-## Learn More
+```
 
-To learn more about Next.js, take a look at the following resources:
+npm install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+npm run dev
+```
 
-## Deploy on Vercel
+Built with Node Version:
+v18.7.0
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Next Version:
+v13.2.3
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+React Version:
+v18.2.0
+
+Blender Version:
+v3.4

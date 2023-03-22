@@ -28,50 +28,6 @@
   justify-content: center;
 }
 
-.cardContainer {
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  bottom: 140px;
-  align-self: center;
-  align-items: center;
-  position: relative;
-}
-
-.cards {
-  position: relative;
-  width: 200px;
-  border-radius: 15px;
-  height: 200px;
-  margin: 14px;
-  margin-top: 0px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.3px);
-  -webkit-backdrop-filter: blur(10.3px);
-  background-color: rgba(255, 255, 255, 0.3);
-}
-.cardName {
-  color: black;
-  text-align: center;
-}
-
-.cardInfo {
-  color: black;
-  text-align: center;
-  margin-top: 25px;
-}
-
-.icons {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  align-self: center;
-  margin-left: 60px;
-  justify-content: center;
-  margin-top: 15px;
-  font-size: 80px;
-}
-
 .mainWeatherTitle {
   display: flex;
   justify-content: center;
@@ -110,14 +66,25 @@
   margin-left: 10px;
   margin-top: 20px;
   opacity: 0.7;
-  transition: all 1s;
+  transition: all 0.1s ease-out;
 }
-.refreshButton:hover {
-  opacity: 1;
+.refreshButton:active {
+  color: white;
 }
 
 .locationIcon {
   font-size: 40px;
   margin-right: 10px;
   margin-top: 20px;
+}
+
+.progressBar {
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
+}
+
+.oops {
+  color: white;
+  margin-bottom: 20px;
 }

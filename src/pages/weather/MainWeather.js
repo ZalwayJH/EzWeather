@@ -3,10 +3,8 @@ import WeatherCard from "./WeatherCard";
 import WeatherIcon from "./WeatherIcon";
 import { TbRefresh } from "react-icons/tb";
 import { IoLocationSharp } from "react-icons/io5";
-import { useState } from "react";
 
 export default function MainWeather({ weatherData, setRefresh }) {
-  const [rotate, setRotate] = useState(360);
   const capitalize = (string) => {
     return string[0].toUpperCase() + string.slice(1);
   };
@@ -17,16 +15,10 @@ export default function MainWeather({ weatherData, setRefresh }) {
   const feelsLike = weatherData.main.feels_like;
   const humidity = weatherData.main.humidity;
   const windSpeed = weatherData.wind.speed;
-  const weatherInfoArr = [`${temp}`, feelsLike, humidity, windSpeed];
+  const weatherInfoArr = [temp, feelsLike, humidity, windSpeed];
   const date = new Date().toDateString();
   const iconCode = weatherData.weather[0].icon;
 
-  const btn = document.getElementById("refreshBtn");
-  if (btn) {
-    btn.addEventListener("click", function () {
-      btn.style.transform = `rotate(${rotate}deg)`;
-    });
-  }
   return (
     <section className={styles.weatherSection}>
       <div className={styles.container}>

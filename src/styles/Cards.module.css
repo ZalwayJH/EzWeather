@@ -1,0 +1,47 @@
+.cardContainer {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  bottom: 140px;
+  align-self: center;
+  align-items: center;
+  position: relative;
+}
+
+.cards {
+  position: relative;
+  width: 200px;
+  border-radius: 15px;
+  height: 200px;
+  margin: 14px;
+  margin-top: 0px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.3px);
+  -webkit-backdrop-filter: blur(10.3px);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.cardName {
+  color: rgb(207, 207, 207);
+  text-align: center;
+  background-color: rgb(50, 50, 50);
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  font-size: larger;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.cardInfo {
+  color: black;
+  text-align: center;
+  margin-top: 15px;
+  font-size: xx-large;
+}
+
+.icons {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 20px;
+  user-select: none;
+}

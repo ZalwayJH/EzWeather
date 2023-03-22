@@ -1,19 +1,40 @@
-import styles from "@/styles/Weather.module.css";
-import { FaTemperatureLow } from "react-icons/fa";
-import { MdOutlineFaceRetouchingOff } from "react-icons/md";
-import { WiHumidity } from "react-icons/wi";
-import { TbWind } from "react-icons/tb";
-import { CiTempHigh } from "react-icons/ci";
+import styles from "@/styles/Cards.module.css";
+import Image from "next/image";
 
 export default function WeatherCard({ info }) {
   const cardNames = ["Temperature", "Feels like", "Humidity", "Wind speed"];
   const icons = [
-    <CiTempHigh className={styles.icons} />,
-    <MdOutlineFaceRetouchingOff className={styles.icons} />,
-    <WiHumidity className={styles.icons} />,
-    <TbWind className={styles.icons} />,
+    <Image
+      src="/MyWeatherIcons/temperatureIcon.png"
+      alt="temperature icon"
+      width={90}
+      height={90}
+      className={styles.icons}
+    />,
+    <Image
+      src="/MyWeatherIcons/feelsLikeIcon.png"
+      alt="feels like icon"
+      width={90}
+      height={90}
+      className={styles.icons}
+    />,
+    <Image
+      src="/MyWeatherIcons/humidityIcon.png"
+      alt="feels like icon"
+      width={90}
+      height={90}
+      className={styles.icons}
+    />,
+    <Image
+      src="/MyWeatherIcons/windyIcon.png"
+      alt="wind speed icon"
+      width={90}
+      height={90}
+      className={styles.icons}
+    />,
   ];
   const degC = "\u00b0";
+
   return (
     <div className={styles.cardContainer}>
       {info.map((item, i) => {
