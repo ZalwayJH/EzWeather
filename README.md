@@ -2,7 +2,7 @@
 
 weather-app is a very simple current weather by city website using Nextjs and the OpenWeatherMap API. I set out on this project in an attempt to see whether i could create completely original, easy to understand 3D weather images using Blender and then integrate them into the website. Created using npx create-next-app@latest.
 
-![Preview of website](/weather-app/src/images/EzWeather.JPG?raw=true)
+![Preview of website](/src/images/EzWeather.JPG?raw=true)
 
 :eye_speech_bubble: Here is a link to the site:
 
@@ -20,17 +20,17 @@ The user can use the search bar to type in the name of any city, once they press
 
 ### My 3D weather images
 
-![Broken-Clouds](/weather-app/public/MyWeatherIcons/brokenClouds.png?raw=true)
-![Few-Clouds](/weather-app/public/MyWeatherIcons/fewClouds.png?raw=true)
-![Thunderstorm](/weather-app/public/MyWeatherIcons/thunderStorm.png?raw=true)
-![Snow](/weather-app/public/MyWeatherIcons/snow.png?raw=true)
-![Rain](/weather-app/public/MyWeatherIcons/rain.png?raw=true)
-![Clear-Sky](/weather-app/public/MyWeatherIcons/clearSky.png?raw=true)
-![Scattered-Clouds](/weather-app/public/MyWeatherIcons/scatteredClouds.png?raw=true)
-![Clear-Sky-Night](/weather-app/public/MyWeatherIcons/clearSkyNight.png?raw=true)
-![Few-Clouds-Night](/weather-app/public/MyWeatherIcons/fewCloudsNight.png?raw=true)
-![Rain-Night](/weather-app/public/MyWeatherIcons/rainNight.png?raw=true)
-![Snow-night](/weather-app/public/MyWeatherIcons/snowNight.png?raw=true)
+![Broken-Clouds](/public/MyWeatherIcons/brokenClouds.png?raw=true)
+![Few-Clouds](/public/MyWeatherIcons/fewClouds.png?raw=true)
+![Thunderstorm](/public/MyWeatherIcons/thunderStorm.png?raw=true)
+![Snow](/public/MyWeatherIcons/snow.png?raw=true)
+![Rain](/public/MyWeatherIcons/rain.png?raw=true)
+![Clear-Sky](/public/MyWeatherIcons/clearSky.png?raw=true)
+![Scattered-Clouds](/public/MyWeatherIcons/scatteredClouds.png?raw=true)
+![Clear-Sky-Night](/public/MyWeatherIcons/clearSkyNight.png?raw=true)
+![Few-Clouds-Night](/public/MyWeatherIcons/fewCloudsNight.png?raw=true)
+![Rain-Night](/public/MyWeatherIcons/rainNight.png?raw=true)
+![Snow-night](/public/MyWeatherIcons/snowNight.png?raw=true)
 
 #### Features
 
