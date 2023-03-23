@@ -6,7 +6,7 @@ weather-app is a very simple current weather by city website using Nextjs and th
 
 :eye_speech_bubble: Here is a link to the site:
 
-[EzWeather](https://www.youtube.com/watch?v=FPEjf9Da7dk)
+[EzWeather](https://ezweathernow.netlify.app/)
 
 ## You can find OpenWeatherMap.org here
 
