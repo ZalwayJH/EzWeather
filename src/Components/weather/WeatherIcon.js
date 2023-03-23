@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import styles from "@/styles/Weather.module.css";
 
@@ -29,7 +28,7 @@ const WeatherIcon = ({ iconCode }) => {
       <Image
         className={styles.weatherIcon}
         src={`/MyWeatherIcons/${codeLibrary[iconCode]}.png`}
-        alt="Weather Icon"
+        alt="Weather image of "
         priority={true}
         width={450}
         height={440}

@@ -1,7 +1,7 @@
 import styles from "@/styles/Weather.module.css";
 import Search from "./Search";
 import MainWeather from "./MainWeather";
-import getWeatherData from "../api/getWeather";
+import getWeatherData from "../../api/getWeather";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { BeatLoader } from "react-spinners";

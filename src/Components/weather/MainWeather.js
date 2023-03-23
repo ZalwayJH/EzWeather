@@ -22,12 +22,16 @@ export default function MainWeather({ weatherData, setRefresh }) {
   return (
     <section className={styles.weatherSection}>
       <div className={styles.container}>
-        <IoLocationSharp className={styles.locationIcon} />
+        <IoLocationSharp
+          aria-label="location icon"
+          className={styles.locationIcon}
+        />
         <h3 className={styles.locationInfo}>
           {city}, {country} | {date}
         </h3>
         <TbRefresh
-          id="refreshBtn"
+          role="button"
+          aria-label="refresh button"
           onClick={() => {
             setRefresh(true);
           }}

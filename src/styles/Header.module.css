@@ -1,0 +1,10 @@
+.title {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px;
+  width: 999px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  color: rgb(236, 170, 134);
+  margin: 0px;
+}
