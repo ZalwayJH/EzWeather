@@ -2,7 +2,7 @@
 
 weather-app is a very simple current weather by city website using Nextjs and the OpenWeatherMap API. I set out on this project in an attempt to see whether i could create completely original, easy to understand 3D weather images using Blender and then integrate them into the website. Created using npx create-next-app@latest.
 
-![Preview](/weather-app/src/images/EzWeather.JPG?raw=true)
+![Preview of website](/weather-app/src/images/EzWeather.JPG?raw=true)
 
 :eye_speech_bubble: Here is a link to the site:
 
