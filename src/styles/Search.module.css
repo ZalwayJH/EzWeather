@@ -43,6 +43,9 @@
   .searchBar input {
     width: 320px;
   }
+  .searchButton {
+    top: 1px;
+  }
 }
 
 @media only screen and (max-width: 390px) and (min-width: 360px) {
@@ -50,6 +53,5 @@
     width: 290px;
   }
   .searchButton {
-    bottom: 1px;
   }
 }
