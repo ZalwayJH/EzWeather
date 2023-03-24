@@ -14,11 +14,13 @@ export default function Weather() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    getWeatherData(city).then((data) => {
-      setWeatherData(data);
-      setRefresh(false);
-      setLoading(false);
-    });
+    if (city) {
+      getWeatherData(city).then((data) => {
+        setWeatherData(data);
+        setRefresh(false);
+        setLoading(false);
+      });
+    }
   }, [city, refresh]);
 
   return (

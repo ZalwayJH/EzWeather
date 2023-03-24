@@ -10,6 +10,11 @@
   background-size: cover;
   background-position: center;
 }
+@media screen and (max-width: 414px) and (min-width: 360px) {
+  .main {
+    height: 100%;
+  }
+}
 
 .description {
   display: inherit;

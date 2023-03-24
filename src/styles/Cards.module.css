@@ -1,5 +1,6 @@
 .cardContainer {
   display: flex;
+  flex-wrap: wrap;
   margin: auto;
   justify-content: center;
   bottom: 140px;
@@ -43,4 +44,64 @@
   margin: 0 auto;
   margin-top: 20px;
   user-select: none;
+}
+
+@media screen and (max-width: 375px) {
+  .cardContainer {
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  .cards {
+    width: 150px;
+  }
+  .icons {
+    max-width: 70px;
+    height: 70px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .cardInfo {
+    position: relative;
+    top: 10px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .cardContainer {
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  .cards {
+    width: 150px;
+  }
+  .icons {
+    max-width: 70px;
+    height: 70px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .cardInfo {
+    position: relative;
+    top: 10px;
+  }
+}
+
+@media screen and (max-width: 414px) and (min-width: 391px) {
+  .cardContainer {
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  .cards {
+    width: 170px;
+  }
+  .icons {
+    max-width: 70px;
+    height: 70px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .cardInfo {
+    position: relative;
+    top: 10px;
+  }
 }

@@ -1,6 +1,5 @@
 .weatherContainer {
   width: 1000px;
-  min-height: 700px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   background: rgba(0, 0, 0, 0.2);
@@ -8,6 +7,7 @@
   backdrop-filter: blur(10.3px);
   -webkit-backdrop-filter: blur(10.3px);
   border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
 }
 
 .locationInfo {
@@ -87,3 +87,52 @@
 .oops {
   color: white;
 }
+
+@media screen and (min-width: 391px) and (max-width: 414px) {
+  .weatherContainer {
+    width: 399px;
+    height: 860px;
+    bottom: 70px;
+  }
+  .locationInfo {
+    position: relative;
+    top: 10px;
+    font-size: larger;
+  }
+  .weatherIcon {
+    width: 380px;
+    height: 360px;
+  }
+}
+
+@media screen and (max-width: 390px) and (min-width: 360px) {
+  .weatherContainer {
+    width: 358px;
+    height: 820px;
+  }
+  .locationInfo {
+    position: relative;
+    top: 10px;
+    font-size: large;
+  }
+  .weatherIcon {
+    width: 350px;
+    height: 330px;
+  }
+}
+
+/* @media screen and (max-width: 375px) {
+  .weatherContainer {
+    width: 365px;
+    height: 820px;
+  }
+  .locationInfo {
+    position: relative;
+    top: 10px;
+    font-size: large;
+  }
+  .weatherIcon {
+    width: 350px;
+    height: 320px;
+  }
+} */

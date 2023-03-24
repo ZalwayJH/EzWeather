@@ -7,4 +7,18 @@
   border-top-right-radius: 14px;
   color: rgb(236, 170, 134);
   margin: 0px;
+  position: relative;
+}
+
+@media screen and (max-width: 414px) and (min-width: 391px) {
+  .title {
+    width: 400px;
+    bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 390px) and (min-width: 360px) {
+  .title {
+    width: 358px;
+  }
 }
